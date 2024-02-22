@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" ,content="width=device-width, initial-scale=1.0">
   <title>JCI Balneário Camboriú</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
@@ -43,6 +43,32 @@
   .collapsible-link[aria-expanded='true']::before {
     content: '\f106';
   }
+  @media screen and (max-width: 1024px){
+    .navbar-nav{
+      display: none;
+    }
+    .btn1{
+      display: none;
+    }
+    .foto1{
+      padding: 10%;
+      right: 10px;
+    }
+    .foto2{
+      padding: 10%;
+    }
+    .foto3{
+      padding: 10%;
+    }
+  
+     
+  
+      
+      
+   
+
+  }
+
 </style>
 
 <body>
@@ -78,7 +104,7 @@
 
       <div class="col-md-4 text-right">
         <a href="https://api.whatsapp.com/send/?phone=5547984666378&text&type=phone_number&app_absent=0" target="_blank">
-          <button style="
+          <button class="btn1"  style="
           border-radius: 20px;
           width: 200px;
           height: 35px;
@@ -124,16 +150,16 @@
         <div class="col-md-7" style="align-items: center; justify-content: center; display: flex;">
           <div class="row">
             <div class="col-md-12 text-center">
-              <div style="
-                width: 400px;
-                height: 400px;
+              <div class="foto3"style="
+                width: 285px;
+                height: 285px;
                 border-radius: 100%;
                 background-color: #ffc107;
               ">
 
               </div>
-              <img src="./img/Grupo_de_mscara_1@2x.png" class="card-img mx-auto mb-3" alt="Grupo de mscara"
-                style="width: 350px; margin-top:-500px;">
+              <img class="foto1" src="./img/Grupo_de_mscara_1@2x.png" class="card-img mx-auto mb-3" alt="Grupo de mscara"
+                style="width: 250px; margin-top:-350px;">
             </div>
           </div>
         </div>
@@ -147,8 +173,9 @@
       <div class="col-md-6">
         <div class="row d-flex justify-content-center">
           <div class="card" style="width: 90% !important; height: 400px; border-style: none;">
-            <img src="./img/Grupo_de_mscara_2@2x.png" class="card-img mx-auto" alt="Grupo de mscara"
-              style="max-height: 400px; background-color: yellow; border-radius: 26px;">
+            <img class="foto2" src="./img/Grupo_de_mscara_2@2x.png" class="card-img mx-auto" alt="Grupo de mscara">
+            <div class="foto4"style="max-height: 400px; background-color: yellow; border-radius: 26px;">
+            </div>
           </div>
         </div>
       </div>
@@ -185,7 +212,7 @@
     <div class=" container" style="height: 100%;">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h1 class="mb-5" style="color: rgba(0,73,153,1);">O que desenvolvemos</h1>
+        <h1 class="mb-5" style="color: rgba(0,73,153,1);">O que fazemos</h1>
         <div class="row">
           <div class="col-md-4 text-center">
             <p class="mb-3">Oratória</p>
@@ -327,21 +354,21 @@
     </div>
   </div>
 
-  <div class="container-fluid mt-5 mb-5" style="height: 100%;"">
-    <div class=" container" style="justify-content: center; display: flex; align-items: center;">
+  <div class="container-fluid mt-5 mb-5" style="height: 100%;">
+    <div class=" container" style="justify-content: center;">
     <div style="width: 70%; flex-direction: row; display: flex;">
       <div class="col-md-4 text-center" style="padding: 30px;">
-        <h1 style="color: rgba(0,73,153,1); font-weight: bold; font-size: 60px;">+725</h1>
+        <h1 class="num1" style="color: rgba(0,73,153,1); font-weight: bold; font-size: 60px;">+725</h1>
         <p style="font-size: 20px;">Horas complementares para alunos da graduação.</p>
       </div>
 
       <div class="col-md-4 text-center" style="padding: 30px;">
-        <h1 style="color: rgba(0,73,153,1); font-weight: bold; font-size: 60px;">+380</h1>
+        <h1 class="num2" style="color: rgba(0,73,153,1); font-weight: bold; font-size: 60px;">+380</h1>
         <p style="font-size: 20px;">Pessoas participantes em palestras diferentes.</p>
       </div>
 
       <div class="col-md-4 text-center" style="padding: 30px;">
-        <h1 style="color: rgba(0,73,153,1); font-weight: bold; font-size: 60px;">+4.500</h1>
+        <h1 class="num3" style="color: rgba(0,73,153,1); font-weight: bold; font-size: 60px;">+4.500</h1>
         <p style="font-size: 20px;">Peças de roupas doadas à pessoas carentes.</p>
       </div>
     </div>
@@ -411,7 +438,7 @@
                         <p class="card-text">Possui todos os direitos do aspirante;</p>
                         <p class="card-text">Pode assumir cargos;</p>
                         <p class="card-text">Pode desenvolver projetos próprios;</p>
-                        <p class="card-text">Pode participar de competiçoes regionais, nacionais e mundiais;</p>
+                        <p class="card-text">Pode participar de competições regionais, nacionais e mundiais;</p>
                       </div>
                     </div>
 
