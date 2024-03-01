@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
   <link rel="shortcut icon" type="imagex/png" href="img/Brasão 3.png">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <style>
   @font-face {
@@ -63,13 +63,126 @@
     .card-title {
       font-size: 20px;
     }
-   
-  
-     
-  
-      
+    /*Formulário*/
+
+input, textarea {
+
+border: 0;
+outline: 0;
+font-size: 1.2em;
+background: transparent;
+color: #797979;
+position: relative;
+font-family: 'open_sansregular';
+
 }
 
+textarea { resize: none; }
+
+.formulario {
+
+max-width: 550px;
+margin: 0 auto;
+border-radius: 2px;
+
+}
+
+.form {
+
+display: flex;
+flex-wrap: wrap;
+
+}
+
+.form-item {
+
+position: relative;
+width: 100%;
+padding: 1em;
+
+}
+
+@media only screen and (min-width: 768px) {
+
+.form-item.col-responsive { width: 50%; }
+
+}
+
+.form-item .textarea {
+
+height: 10em;
+
+}
+.form-item .input, .form-item .textarea {
+
+display: block;
+padding: 1em;
+width: 100%;
+transition: all 0.3s;
+border-bottom: 2px solid #56D4D9;
+
+}
+
+.form-item .input:focus, .form-item .textarea:focus {
+
+border-bottom: 2px solid #333333;
+
+}
+
+.form-item .input:valid + .label, .form-item .input:focus + .label, .form-item .textarea:valid + .label, .form-item .textarea:focus + .label {
+
+top: 1em;
+left: 1em;
+font-size: 0.9em;
+
+}
+
+.form-item .input:valid, .form-item .textarea:valid {
+
+border-bottom: 2px solid #56D4D9;
+
+}
+
+.form-item .label {
+
+position: absolute;
+top: 2em;
+left: 2em;
+text-transform: capitalize;
+transition: all 0.3s;
+
+}
+
+.form-item .botao {
+
+display: block;
+width:120px;
+padding: 0.8em 0.6em;
+border:2px #56D4D9 solid;
+border-radius:3px; 
+color: #56D4D9;
+cursor: pointer;
+transition: all 0.3s;
+
+}
+
+.form-item .botao:hover {
+
+background: #828282;
+color: #ffffff;
+border:2px #828282 solid;
+
+}
+
+.form-item .botao:active {
+
+background-color:#ff9000;
+color:#ffffff;
+border:2px #ff9000 solid; 
+
+}
+/*Formulário*/
+}
 </style>
 
 <body>
@@ -645,6 +758,43 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+  <div>
+    
+    <div class="formulario">
+    
+      <form class="form" action="">
+
+        <div class="form-item col-responsive">
+          <input class="input" type="text" name="nome" required="required" id="name"/>
+          <label class="label" for="nome">Nome</label>
+        </div>
+        
+        <div class="form-item col-responsive">
+          <input class="input" type="text" name="email" required="required" id="email"/>
+          <label class="label" for="email">E-mail</label>
+        </div>
+        
+        <div class="form-item">
+          <input class="input" type="text" name="assunto" required="required" id="assunto"/>
+          <label class="label" for="assunto">Assunto</label>
+        </div>
+        
+        <div class="form-item">
+          <textarea class="textarea" name="mensagem" required="required" id="textarea"></textarea>
+          <label class="label" for="mensagem">mensagem</label>
+        </div>
+        
+        <div class="form-item">
+          <input class="botao" type="submit" value="Enviar"/>
+        </div>
+
+      </form>
+  
+  </div><!--Class Formulario-->
+  </div>
 </body>
 <footer class="bg-primary text-center text-lg-start text-white">
   <div class="button">
