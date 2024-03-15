@@ -29,3 +29,25 @@
   .collapsible-link[aria-expanded='true']::before {
     content: '\f106';
   }
+  
+  @media screen and (max-width: 1024px){
+    .navbar-nav{
+      display: none;
+    }
+    .btn1{
+      display: none;
+    }
+    .foto1{
+      padding: 10%;
+      right: 10px;
+    }
+    .foto2{
+      padding: 10%;
+    }
+    .foto3{
+      padding: 10%;
+    }
+    .card-title {
+      font-size: 20px;
+    }
+}
