@@ -29,6 +29,7 @@
   .collapsible-link[aria-expanded='true']::before {
     content: '\f106';
   }
+  /*
   @media screen and (max-width: 1024px){
     .navbar-nav{
       display: none;
