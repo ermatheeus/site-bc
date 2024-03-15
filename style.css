@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'MinhaFontePersonalizada';
+    src: url('fonts/Montserrat-Thin.ttf') format('ttf');
+  }
+
+  body {
+    font-family: 'MinhaFontePersonalizada', sans-serif;
+  }
+
+  .collapsible-link {
+    width: 100%;
+    position: relative;
+    text-align: left;
+  }
+
+  .collapsible-link::before {
+    content: '\f107';
+    position: absolute;
+    top: 50%;
+    right: 0.8rem;
+    transform: translateY(-50%);
+    display: block;
+    font-family: 'FontAwesome';
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffc107;
+  }
+
+  .collapsible-link[aria-expanded='true']::before {
+    content: '\f106';
+  }
+  @media screen and (max-width: 1024px){
+    .navbar-nav{
+      display: none;
+    }
+    .btn1{
+      display: none;
+    }
+    .foto1{
+      padding: 10%;
+      right: 10px;
+    }
+    .foto2{
+      padding: 10%;
+    }
+    .foto3{
+      padding: 10%;
+    }
+    .card-title {
+      font-size: 20px;
+    }
+}
