@@ -295,18 +295,38 @@
     <div class="container" style="justify-content: center; display: flex; align-items: center;">
         <div style="width: 70%; flex-direction: row; display: flex;">
             <div class="col-md-4 text-center" style="padding: 0px; left: -20%;">
-              <h1 style="color: rgba(0,73,153,1); font-weight: bold; font-size: 50px;">+725</h1>
-              <p style="font-size: 15px;">Horas complementares para alunos da graduação.</p>
+              <h1  style=" color: rgba(0,73,153,1); font-weight: bold; font-size: 50px;">+725</h1>
+              <p class="e1" style="font-size: 15px;">Horas complementares para alunos da graduação.</p>
+              <style>
+                @media screen and (max-width: 768px) {
+                  .e1 {
+                    
+                    flex-direction: column;
+                    
+                  }
+                  .e2 {
+                    
+                    flex-direction: column;
+                    
+                  }
+                  .e3{
+                    
+                    flex-direction: column;
+                    
+
+                  }
+}
+              </style>
             </div>
     
             <div class="col-md-4 text-center" style="padding: 0px; left: 8,5%;">
-              <h1 style="color: rgba(0,73,153,1); font-weight: bold; font-size: 50px;">+380</h1>
-              <p style="font-size: 15px;">Pessoas participantes em palestras diferentes.</p>
+              <h1  style=" color: rgba(0,73,153,1); font-weight: bold; font-size: 50px;">+380</h1>
+              <p class="e2" style="font-size: 15px;">Pessoas participantes em palestras diferentes.</p>
             </div>
     
-            <div class="col-md-4 text-center" style="padding: 00px;left: 20%;">
-              <h1 style="color: rgba(0,73,153,1); font-weight: bold; font-size: 50px;">+4.500</h1>
-              <p style="font-size: 15px;">Peças de roupas doadas à pessoas carentes.</p>
+            <div class="col-md-4 text-center" style="padding: 0px;left: 20%;">
+              <h1  style="color: rgba(0,73,153,1); font-weight: bold; font-size: 50px;">+4.500</h1>
+              <p class="e3" style="font-size: 15px;">Peças de roupas doadas à pessoas carentes.</p>
             </div>
     </div>
   </div>
@@ -468,7 +488,7 @@
   </div>
 
   <div class="container-test">
-    <h1 class="teste1">Nossos mantenedores</h1>
+    <h1 class="teste1">Nossos Mantenedores</h1>
 
     
     
@@ -483,7 +503,7 @@
     <style>
       .teste1 {
         
-        font-size: 30px; color: rgba(0,73,153,1);
+        font-size: 35px; color: rgba(0,73,153,1);
         display: flex;
         justify-content: center;
         margin: 50px;
@@ -503,6 +523,8 @@
         width: 450px;
         height: 300px;
         margin: 60px;
+        max-width: 768px;
+        max-height: 768px;
       
         
         
@@ -511,6 +533,8 @@
         width: 250px;
         height: 150px;
         margin: 60px;
+        max-width: 768px;
+        max-height: 768px;
         
         
         
@@ -519,10 +543,44 @@
         width: 250px;
         height: 250px;
         margin: 60px;
+        max-width: 768px;
+        max-height: 768px;
         
         
         
       }
+      @media screen and (max-width: 768px){
+        .teste1 {
+          font-size: 35px;
+          align-items: center;
+        }
+        .container-test{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .e2{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .e1{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .e3{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        
+  /* Estilos para telas menores que 768px de largura */
+}
      
       
     </style>
