@@ -1,3 +1,6 @@
+
+
+
 @font-face {
     font-family: 'MinhaFontePersonalizada';
     src: url('fonts/Montserrat-Thin.ttf') format('ttf');
@@ -50,4 +53,20 @@
     .card-title {
       font-size: 20px;
     }
+    
 }
+
+.mantenedor{
+  padding-left: 0%;
+  margin: 200px;
+}
+
+
+.fixarRodape {
+  
+  width: 100%;
+  text-align: center;
+  
+}
+
+/* Path: index.html */
